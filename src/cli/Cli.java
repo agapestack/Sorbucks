@@ -40,7 +40,7 @@ public class Cli {
 			int choix = getUserInt();
 			
 			try {
-				if(choix < 0 || choix > 3) {
+				if(choix < 1 || choix > 3) {
 					throw new InputException("Mauvaise entrée");
 				}
 			} catch (InputException e) {

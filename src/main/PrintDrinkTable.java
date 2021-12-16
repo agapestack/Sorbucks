@@ -1,12 +1,11 @@
-package test;
+package main;
 
 import java.util.ArrayList;
 
-import db.DrinkIngredientPersister;
 import db.DrinkPersister;
 import drink.Drink;
 
-public class Test {
+public class PrintDrinkTable {
 	public static void main(String[] args) {
 		DrinkPersister dp = DrinkPersister.getInstance();
 		ArrayList<Drink> drinkListFromDb = dp.getAll();
@@ -15,7 +14,5 @@ public class Test {
 			System.out.println(drinkListFromDb.get(i).toString());
 		}	
 		
-//		DrinkIngredientPersister.DropTable();
-//		dp.DropTable();
 	}
 }
