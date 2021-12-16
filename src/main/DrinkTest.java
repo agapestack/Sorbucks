@@ -61,7 +61,7 @@ public class DrinkTest {
 		
 		
 //		Dropping table
-//		DrinkIngredientPersister.DropTable();
-//		dp.DropTable();
+		DrinkIngredientPersister.DropTable();
+		dp.DropTable();
 	}
 }
